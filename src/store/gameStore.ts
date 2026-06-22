@@ -6,10 +6,13 @@ import { generateId } from '../utils/format';
 function isPointInDifference(
   clickX: number,
   clickY: number,
-  diff: Difference
+  diff: Difference,
+  side: 'left' | 'right'
 ): boolean {
-  const dx = clickX - diff.x;
-  const dy = clickY - diff.y;
+  const diffX = side === 'left' ? diff.leftX : diff.rightX;
+  const diffY = side === 'left' ? diff.leftY : diff.rightY;
+  const dx = clickX - diffX;
+  const dy = clickY - diffY;
   const distance = Math.sqrt(dx * dx + dy * dy);
   return distance <= diff.radius;
 }
@@ -40,7 +43,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     });
   },
 
-  handleImageClick: (x: number, y: number) => {
+  handleImageClick: (x: number, y: number, side: 'left' | 'right') => {
     const state = get();
     if (state.isCompleted) return;
 
@@ -50,7 +53,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     for (const diff of currentSet.differences) {
       if (state.foundDifferences.includes(diff.id)) continue;
 
-      if (isPointInDifference(x, y, diff)) {
+      if (isPointInDifference(x, y, diff, side)) {
         const newFound = [...state.foundDifferences, diff.id];
         const allFound = newFound.length >= currentSet.differences.length;
 
@@ -67,6 +70,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
       id: generateId(),
       x,
       y,
+      side,
     };
     set({
       wrongClicks: [...state.wrongClicks, wrongClick],

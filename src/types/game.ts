@@ -1,7 +1,9 @@
 export interface Difference {
   id: number;
-  x: number;
-  y: number;
+  leftX: number;
+  leftY: number;
+  rightX: number;
+  rightY: number;
   radius: number;
 }
 
@@ -17,6 +19,7 @@ export interface WrongClick {
   id: string;
   x: number;
   y: number;
+  side: 'left' | 'right';
 }
 
 export interface GameStore {
@@ -31,7 +34,7 @@ export interface GameStore {
   showHint: boolean;
 
   initGame: () => void;
-  handleImageClick: (x: number, y: number) => void;
+  handleImageClick: (x: number, y: number, side: 'left' | 'right') => void;
   removeWrongClick: (id: string) => void;
   nextSet: () => void;
   restartCurrent: () => void;
