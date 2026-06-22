@@ -93,7 +93,7 @@ const beachSceneRight = `
   <circle cx="700" cy="530" r="8" fill="#2ECC71"/>
   <ellipse cx="700" cy="520" rx="10" ry="6" fill="#27AE60"/>
   <ellipse cx="700" cy="510" rx="6" ry="4" fill="#1ABC9C"/>
-  <path d="M400,560 L410,520 L420,560 Z" fill="#9B59B6"/>
+  <path d="M400,560 L410,520 L420,560 Z" fill="#3498DB"/>
   <text x="50" y="580" font-family="Arial" font-size="14" fill="#8B4513" opacity="0.6">🏖️ Beach Day</text>
 </svg>`;
 
@@ -313,8 +313,8 @@ const gardenRight = `
   <ellipse cx="455" cy="205" rx="12" ry="18" fill="#FF9800"/>
   <ellipse cx="475" cy="225" rx="12" ry="18" fill="#FF9800"/>
   <path d="M480,195 L485,180 L490,195 Z" fill="#1B5E20"/>
-  <ellipse cx="720" cy="500" rx="35" ry="25" fill="#6D4C41"/>
-  <ellipse cx="720" cy="500" rx="30" ry="20" fill="#8D6E63"/>
+  <ellipse cx="720" cy="500" rx="35" ry="25" fill="#8D6E63"/>
+  <ellipse cx="720" cy="500" rx="30" ry="20" fill="#A1887F"/>
   <path d="M695,490 L705,470 L715,490 Z" fill="#66BB6A"/>
   <path d="M725,488 L735,465 L745,488 Z" fill="#66BB6A"/>
   <circle cx="720" cy="500" r="5" fill="#4E342E"/>
@@ -432,12 +432,12 @@ const livingRoomRight = `
   <rect x="340" y="440" width="15" height="60" fill="#5D4037"/>
   <rect x="445" y="440" width="15" height="60" fill="#5D4037"/>
   <circle cx="400" cy="405" r="16" fill="#FFAB91"/>
-  <circle cx="400" cy="405" r="10" fill="#90CAF9"/>
+  <circle cx="400" cy="405" r="10" fill="#FF8A65"/>
   <path d="M398,380 L402,380 L402,395 L398,395 Z" fill="#6D4C41"/>
   <ellipse cx="620" cy="450" rx="80" ry="15" fill="#795548"/>
   <rect x="100" y="470" width="200" height="30" fill="#3E2723" rx="8"/>
   <ellipse cx="200" cy="470" rx="30" ry="12" fill="#5D4037"/>
-  <rect x="190" y="465" width="20" height="10" fill="#2196F3" rx="2"/>
+  <rect x="190" y="465" width="20" height="10" fill="#FFC107" rx="2"/>
   <circle cx="250" cy="480" r="5" fill="#FFD54F"/>
 </svg>`;
 
@@ -448,11 +448,11 @@ export const imageSets: ImageSet[] = [
     leftSvg: beachSceneLeft,
     rightSvg: beachSceneRight,
     differences: [
-      { id: 1, leftX: 81.25, leftY: 16.67, rightX: 77.5,  rightY: 16.67, radius: 7 },
-      { id: 2, leftX: 8.75,  leftY: 76.67, rightX: 8.75, rightY: 76.67, radius: 6 },
-      { id: 3, leftX: 18.13, leftY: 71.67, rightX: 18.13, rightY: 71.67, radius: 5.5 },
-      { id: 4, leftX: 75,    leftY: 76.67, rightX: 75,    rightY: 76.67, radius: 5 },
-      { id: 5, leftX: 51.25, leftY: 91,    rightX: 51.25, rightY: 91,    radius: 5 },
+      { id: 1, leftX: 81.25, leftY: 16.67, rightX: 77.5,  rightY: 16.67, radius: 8.5 },
+      { id: 2, leftX: 8.75,  leftY: 78.89, rightX: 8.75, rightY: 78.89, radius: 7.5 },
+      { id: 3, leftX: 18.13, leftY: 71.67, rightX: 18.13, rightY: 71.67, radius: 6.5 },
+      { id: 4, leftX: 75,    leftY: 76.67, rightX: 75,    rightY: 76.67, radius: 5.5 },
+      { id: 5, leftX: 37.5,  leftY: 85.83, rightX: 37.5,  rightY: 85.83, radius: 6.5 },
     ],
   },
   {
@@ -461,11 +461,11 @@ export const imageSets: ImageSet[] = [
     leftSvg: kitchenLeft,
     rightSvg: kitchenRight,
     differences: [
-      { id: 1, leftX: 15,    leftY: 25.83, rightX: 15,    rightY: 25.83, radius: 8 },
-      { id: 2, leftX: 78.13, leftY: 16.67, rightX: 78.13, rightY: 16.67, radius: 4 },
-      { id: 3, leftX: 25,    leftY: 45.83, rightX: 25,    rightY: 45.83, radius: 4 },
-      { id: 4, leftX: 62.5,  leftY: 48.33, rightX: 62.5,  rightY: 48.33, radius: 6 },
-      { id: 5, leftX: 85,    leftY: 49.17, rightX: 85,    rightY: 49.17, radius: 5 },
+      { id: 1, leftX: 15,    leftY: 25.83, rightX: 15,    rightY: 25.83, radius: 10.5 },
+      { id: 2, leftX: 78.13, leftY: 16.67, rightX: 78.13, rightY: 16.67, radius: 5.5 },
+      { id: 3, leftX: 25,    leftY: 45.83, rightX: 25,    rightY: 45.83, radius: 5.5 },
+      { id: 4, leftX: 62.5,  leftY: 48.33, rightX: 62.5,  rightY: 48.33, radius: 7.5 },
+      { id: 5, leftX: 85,    leftY: 49.67, rightX: 85,    rightY: 49.67, radius: 7.5 },
     ],
   },
   {
@@ -474,11 +474,11 @@ export const imageSets: ImageSet[] = [
     leftSvg: gardenLeft,
     rightSvg: gardenRight,
     differences: [
-      { id: 1, leftX: 85,    leftY: 15,    rightX: 87.5,  rightY: 15,    radius: 6 },
-      { id: 2, leftX: 54.13, leftY: 49.33, rightX: 54.13, rightY: 49.33, radius: 4.5 },
-      { id: 3, leftX: 18.75, leftY: 73.33, rightX: 18.75, rightY: 73.33, radius: 6 },
-      { id: 4, leftX: 68.75, leftY: 78.33, rightX: 68.75, rightY: 78.33, radius: 6 },
-      { id: 5, leftX: 59,    leftY: 33.67, rightX: 59,    rightY: 33.67, radius: 7.5 },
+      { id: 1, leftX: 85,    leftY: 15,    rightX: 87.5,  rightY: 15,    radius: 7 },
+      { id: 2, leftX: 54.13, leftY: 49.33, rightX: 54.13, rightY: 49.33, radius: 6 },
+      { id: 3, leftX: 18.75, leftY: 73.33, rightX: 18.75, rightY: 73.33, radius: 9 },
+      { id: 4, leftX: 68.75, leftY: 78.33, rightX: 68.75, rightY: 78.33, radius: 7.5 },
+      { id: 5, leftX: 59.06, leftY: 33.75, rightX: 59.06, rightY: 33.75, radius: 10 },
     ],
   },
   {
@@ -487,11 +487,11 @@ export const imageSets: ImageSet[] = [
     leftSvg: livingRoomLeft,
     rightSvg: livingRoomRight,
     differences: [
-      { id: 1, leftX: 42.5,  leftY: 15.83, rightX: 57.5,  rightY: 15.83, radius: 6.5 },
-      { id: 2, leftX: 16.25, leftY: 15.83, rightX: 16.25, rightY: 15.83, radius: 4 },
-      { id: 3, leftX: 50,    leftY: 41.67, rightX: 50,    rightY: 41.67, radius: 7 },
-      { id: 4, leftX: 68.75, leftY: 58.33, rightX: 68.75, rightY: 58.33, radius: 6 },
-      { id: 5, leftX: 85,    leftY: 29.67, rightX: 85,    rightY: 29.67, radius: 3 },
+      { id: 1, leftX: 42.5,  leftY: 15.83, rightX: 57.5,  rightY: 15.83, radius: 7 },
+      { id: 2, leftX: 16.25, leftY: 15.83, rightX: 16.25, rightY: 15.83, radius: 6 },
+      { id: 3, leftX: 50,    leftY: 41.67, rightX: 50,    rightY: 41.67, radius: 13 },
+      { id: 4, leftX: 68.75, leftY: 57.83, rightX: 68.75, rightY: 57.83, radius: 15 },
+      { id: 5, leftX: 85,    leftY: 29.67, rightX: 85,    rightY: 29.67, radius: 4.5 },
     ],
   },
 ];
